@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_stop_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_release_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RELEASE"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:onClick="showDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RELEASE"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="blank"
+            android:text="数字键盘  左下角空白,右下角删除" />
+
+        <Button
+            android:id="@+id/btn_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="point"
+            android:text="数字键盘  左下角小数点,右下角删除" />
+
+        <Button
+            android:id="@+id/btn_num2abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="num2abc"
+            android:text="数字键盘  左下角ABC,右下角删除" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="delete"
+            android:text="数字键盘  左下角删除,右下角确定" />
+
+        <Button
+            android:id="@+id/btn_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="abc"
+            android:text="字母键盘" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/all_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/normal_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="键盘" />
+
+            <EditText
+                android:id="@+id/special_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="特殊键盘"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/other_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors.Atom is a hackable text editor for the 21st century, built on Electron, and based on everything we love about our favorite editors."
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_bg_999999_10px" />
+    <item
+        android:bottom="44px"
+        android:drawable="@mipmap/iv_num_del"
+        android:gravity="center"
+        android:left="80px"
+        android:right="80px"
+        android:top="42px" />
+</layer-list>
